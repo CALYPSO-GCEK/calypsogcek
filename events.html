@@ -1,225 +1,997 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CALYPSO</title>
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="images/icon.png">
-
-</head>
-<body>
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #0d0d0d;
+        color: #e2e8f0;
+        padding: 0; /* Remove body padding to allow header/footer to go full width */
+        margin: 0;
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        min-height: 100vh; /* Ensure body takes full viewport height */
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div id="cursor"></div>
-    <div id="cursor-border"></div>  
-<!-- header section starts  -->
+    <div id="cursor-border"></div>
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="" />
+      </a>
 
-<header class="header">
+      <nav class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="index.html" class="dropdowna">Home</a>
+          </button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="about us.html" class="dropdowna">About</a>
+          </button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="https://forms.gle/6iV1BLrxaVgz6rrh7" class="dropdowna"
+              >Membership</a
+            >
+          </button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="events.html" class="dropdowna">Events</a>
+          </button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="index.html#contact" class="dropdowna">Contact</a>
+          </button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a
+              style="color: var(--main-color); font-weight: bold"
+              href="Explore.html"
+              class="dropdowna"
+              >Take A Space Tour</a
+            >
+          </button>
+        </div>
+      </nav>
 
-    <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="">
-    </a>
-
-    <nav class="navbar">
-        <div class="dropdown"><button class="dropbtn"><a href="index.html" class="dropdowna">Home</a></button></div>
-        <div class="dropdown"><button class="dropbtn"><a href="about us.html" class="dropdowna">About</a></button></div>
-        <div class="dropdown"><button class="dropbtn"><a href="https://forms.gle/6iV1BLrxaVgz6rrh7" class="dropdowna">Membership</a></button></div>
-          <div class="dropdown">
-            <button class="dropbtn"><a href="events.html" class="dropdowna">Events</a>
-            </button>
-            <!-- <div class="dropdown-content">
-              <a href="#" class="dropdownaa">2022</a>
-              <a href="#" class="dropdownaa">2021</a>
-            </div> -->
-          </div>
-        <!-- <a href="#blogs">blogs</a> -->
-        <div class="dropdown"><button class="dropbtn"><a  href="index.html#contact" class="dropdowna">Contact</a></button></div>
-        <div class="dropdown"><button class="dropbtn"><a style="color:var(--main-color); font-weight: bold;" href="Explore.html" class="dropdowna">Take A Space Tour</a></button></div>
-    </nav>
-
-    <div class="icons">
-        <!-- <div class="fas fa-search" id="search-btn"></div> -->
+      <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
-    </div>
+      </div>
 
-    <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here...">
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
         <label for="search-box" class="fas fa-search"></label>
+      </div>
+    </header>
+    <br />
+    <br /><br /><br />
+    <section class="about" id="about" style="padding-bottom: 0">
+      <div class="content" style="padding-bottom: 0; text-align: center">
+        <h2 class="#" style="color: #fff; font-size: 5rem; padding-bottom: 0%">
+          Previous Events
+        </h2>
+      </div>
+    </section>
+    <div class="container-event">
+      <div class="card-grid-event">
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/mapping-with-bhuvan.jpg"
+                alt="Mapping with BHUVAN"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Mapping with BHUVAN:</strong> Calypso GCEK invites
+              participants to add details to BHUVAN, ISRO's geo-platform,
+              gaining hands-on experience in mapping and contributing to
+              geographical data enhancement.
+            </div>
+            <a
+              href="eventlists.html#mapping-with-bhuvan"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/space-presentation-contest.jpg"
+                alt="Space-Themed Presentation Contest"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Space-Themed Presentation Contest:</strong> A unique
+              platform for participants to present on various space-related
+              topics, part of ISRO's Chandrayaan-3 success celebration.
+            </div>
+            <a
+              href="eventlists.html#space-presentation"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/movie-book-review-competition.jpg"
+                alt="All Kerala Movie/Book Review Writing Competition"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Movie/Book Review Writing Competition:</strong> Calypso
+              GCEK, in collaboration with Catchlight GCEK, welcomes all
+              movie/book enthusiasts to share thoughts on space-themed movies
+              and books.
+            </div>
+            <a
+              href="eventlists.html#movie-book-review"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/luminis-astroquiz.jpg"
+                alt="LUMINIS - The AstroQuiz with Quiz Master Junaid Abdul Nasar"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>LUMINIS – The AstroQuiz:</strong> An electrifying test of
+              cosmic knowledge and curiosity, hosted by Quiz Master Junaid Abdul
+              Nasar. Team registrations are open now!
+            </div>
+            <a
+              href="eventlists.html#luminis-astroquiz"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/chandrayaan-3-model-making.jpg"
+                alt="Chandrayaan-3 Model Making Competition"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Chandrayaan-3 Model Making Competition:</strong> Presented
+              by Calypso GCEK to celebrate the historic success of Chandrayaan-3
+              by building your very own scale model.
+            </div>
+            <a
+              href="eventlists.html#chandrayaan-3-model"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/drawing-competition.jpg"
+                alt="Drawing Competition - National Space Day Celebrations"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Drawing Competition:</strong> Showcase your artistic
+              vision by capturing India’s stellar journey in space, from lunar
+              landings to life-changing satellite tech.
+            </div>
+            <a
+              href="eventlists.html#drawing-competition"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/essay-writing-competition.jpg"
+                alt="Essay Writing Competition - National Space Day Celebrations"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Essay Writing Competition:</strong> Calypso GCEK invites
+              you to express your thoughts on space, science, and exploration,
+              celebrating the success of Chandrayaan-3.
+            </div>
+            <a
+              href="eventlists.html#essay-writing"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/stellaluna-decoration-contest.jpg"
+                alt="STELLALUNA Decoration Contest - National Space Day Celebrations"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>STELLALUNA Decoration Contest:</strong> Hosted by Calypso
+              GCEK as part of National Space Day celebrations, inviting
+              participants to creatively honor India’s space odyssey and its
+              impact on lives.
+            </div>
+            <a
+              href="eventlists.html#stellaluna-decoration"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/escape-from-college.jpg"
+                alt="Escape From College - A Moon Day Special"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>ESCAPE FROM COLLEGE:</strong> A thrilling online escape
+              room experience to celebrate the Apollo 11 landing on Moon Day,
+              July 20th, 2024, testing your wits and imagination.
+            </div>
+            <a
+              href="eventlists.html#escape-from-college"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/model-space-startup-challenge.jpg"
+                alt="Model Space Startup Challenge - North Zone"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Model Space Startup Challenge:</strong> Calypso GCEK
+              hosted this high-impact startup idea pitching competition, powered
+              by Kerala Startup Mission & UL Space Club, attracting over 60
+              young minds.
+            </div>
+            <a
+              href="eventlists.html#model-space-startup"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/alumni-talk-kiran-mohan.jpg"
+                alt="Alumni Talk by Kiran Mohan, Scientist at LPSC/ISRO"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Alumni Talk:</strong> A special session with Mr. Kiran
+              Mohan, Scientist at LPSC/ISRO and GCEK alumnus, discussing "Space
+              Sector: The Changing Frontiers."
+            </div>
+            <a
+              href="eventlists.html#alumnitalk-kiranmohan"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/ai-image-generation.jpg"
+                alt="AI-Based Image Generation Competition - Topic: Life After 2049"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>AI-Based Image Generation Contest:</strong> Organized by
+              CALYPSO GCEK as part of World Space Week, challenging participants
+              to explore 'Life After 2049' through AI-generated visuals.
+            </div>
+            <a
+              href="eventlists.html#ai-image-generation"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img src="images/solareclipse.jpeg" alt="Solar Eclipse" />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Solar Eclipse:</strong> Join us at the PG BLOCK terrace
+              from 5PM-6PM today to witness this beautiful phenomenon.
+            </div>
+            <a
+              href="eventlists.html#solareclipse"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="images/anightofstargazing.jpg"
+                alt="A Night of Star Gazing"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>A Night of Star Gazing:</strong> Join Us for a night
+              filled with astronomy at astro payyannur!
+            </div>
+            <a
+              href="eventlists.html#anightofstargazing"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img src="images/callisto.jpg" alt="Callisto" />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Callisto:</strong> Join us for a Fun and Informative space
+              quiz!
+            </div>
+            <a href="eventlists.html#callisto" class="know-more-button-event">
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="images/astrophotography.jpg"
+                alt="Astrophotography Contest"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Astrophotography Contest:</strong> Put your skills in
+              Astrophotography and win exciting prizes!
+            </div>
+            <a
+              href="eventlists.html#astrophotographycontest"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img src="images/galactic.jpg" alt="Galactic" />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Galactic:</strong> Join us for a Fun and Informative space
+              quiz!
+            </div>
+            <a href="eventlists.html#galactic" class="know-more-button-event">
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img src="images/Airborne2.png" alt="Airborne 2.0" />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Airborne 2.0:</strong> Join Us for an interesting session
+              on Emerging Technologies in Aerospace And Aviation by sir Satheesh
+              Palakkeel.
+            </div>
+            <a href="eventlists.html#airborne" class="know-more-button-event">
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="images/swearing in ceremony.jpg"
+                alt="Swearing In Ceremony"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Swearing In Ceremony:</strong> All club members are
+              invited to join the swearing in ceremony as new crew members are
+              invited to the board.
+            </div>
+            <a
+              href="eventlists.html#swearinginceremony"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img src="images/Artemis.gif" alt="Artemis" />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Artemis:</strong> Join us for an exciting 2 day virtual
+              treasure hunt.
+            </div>
+            <a href="eventlists.html#artemis" class="know-more-button-event">
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/astrophotography-contest.jpg"
+                alt="All Kerala Astrophotography Contest"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Astrophotography Contest:</strong> CALYPSO GCEK's All
+              Kerala Astrophotography Contest, inviting participants to capture
+              the wonders of the night sky, with categories like Mercury,
+              Perseid meteor shower, Saturn, and Blue Moon.
+            </div>
+            <a
+              href="eventlists.html#astrophotography"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/space-blogging.jpg"
+                alt="Space Blogging Contest"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Space Blogging Contest:</strong> CALYPSO GCEK's initiative
+              to foster creative expression and scientific curiosity, inviting
+              participants to explore and articulate ideas on cosmic topics.
+            </div>
+            <a
+              href="eventlists.html#spaceblogging"
+              class="know-more-button-event"
+            >
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/helios.jpg"
+                alt="HELIOS - A Journey Through the Solar System"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>HELIOS:</strong> A commemorative online talk titled "A
+              Journey Through the Solar System" by Dr. Vaisakhan Thampi,
+              organized by CALYPSO GCEK to mark its first anniversary.
+            </div>
+            <a href="eventlists.html#helios" class="know-more-button-event">
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/pandora.jpg"
+                alt="PANDORA - An Online Space Quiz"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>PANDORA:</strong> An online space quiz conducted by
+              CALYPSO GCEK, aimed at engaging space enthusiasts and testing
+              their knowledge of space science and exploration.
+            </div>
+            <a href="eventlists.html#pandora" class="know-more-button-event">
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/selene.jpg"
+                alt="Selene - Quiz Competition"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Selene:</strong> An engaging moon quiz competition
+              organized by Calypso GCEK on September 3rd, 2021, designed to
+              challenge participants' knowledge about the Moon.
+            </div>
+            <a href="eventlists.html#selene" class="know-more-button-event">
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/celestia.jpg"
+                alt="Celestia - Image Description Competition"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Celestia:</strong> A creative image description contest by
+              Calypso GCEK, challenging astronomy enthusiasts to describe
+              celestial objects in under 100 words.
+            </div>
+            <a href="eventlists.html#celestia" class="know-more-button-event">
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/asteria.jpg"
+                alt="Asteria - Case Study Competition: The Atlas Centaur 67 Incident"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Asteria:</strong> A thought-provoking case study
+              competition on the Atlas Centaur 67 incident, organized by Calypso
+              – The Space Club of GCEK.
+            </div>
+            <a href="eventlists.html#asteria" class="know-more-button-event">
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/airborne.jpg"
+                alt="AIRBORNE - Interactive Alumni Session on Aircraft Engine Design"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>AIRBORNE:</strong> An interactive alumni session on
+              aircraft engine design with Mr. Hari Analakkat (Rolls-Royce
+              Aviation), focusing on fundamentals, concepts, and industry
+              challenges.
+            </div>
+            <a href="eventlists.html#airborne" class="know-more-button-event">
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/techni.jpg"
+                alt="TECHNI - Concept Art Competition: The First Human on Mars"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>TECHNI:</strong> A concept art competition on the theme
+              'The First Human on Mars', organized by Calypso – the Space Club
+              of GCEK, to ignite imagination and creativity.
+            </div>
+            <a href="eventlists.html#techni" class="know-more-button-event">
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/zathura.jpg"
+                alt="Zathura - Outer Space-Themed Crossword Competition"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>ZATHURA:</strong> An out-of-this-world crossword
+              competition themed entirely on space and astronomy, organized by
+              Calypso – the Space Club of GCEK.
+            </div>
+            <a href="eventlists.html#zathura" class="know-more-button-event">
+              Know More
+            </a>
+          </div>
+        </div>
+
+        <div class="card-event">
+          <div class="card-content-event">
+            <div class="header-info-event">
+              <span> CALYPSO GCEK PRESENTS </span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <div class="square-content-box-event">
+              <img
+                src="./images/Events Images/spacehunt.jpg"
+                alt="Space Hunt - An Online Space Quiz"
+              />
+            </div>
+            <div class="user-text-area-event">
+              <strong>Space Hunt:</strong> An electrifying virtual space quiz
+              competition hosted by Calypso – the Space Club of GCEK, designed
+              to ignite curiosity and challenge participants.
+            </div>
+            <a href="eventlists.html#spacehunt" class="know-more-button-event">
+              Know More
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+    <section class="footer">
+      <div class="share">
+        <a
+          href="https://instagram.com/calypsogcek?igshid=YmMyMTA2M2Y="
+          class="fab fa-instagram"
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/calypso-gcek/"
+          class="fab fa-linkedin"
+        ></a>
+      </div>
 
-</header>
-<!-- header section ends -->
+      <div class="credit">
+        created by <span>CALYPSO GCEK</span> | all rights reserved
+      </div>
+    </section>
 
-<!-- about section starts  -->
-
-<section class="about" id="about" style="padding-bottom:0;">
-    <br><br>
-    <br><br>
-    <br><br>
-    <!-- <h1 class="heading"> <span>PROGRAM</span>s</h1> -->
-
-    <div class="content" style="padding-bottom:0; text-align: center;">
-        <!-- <style>
-            @keyframes animationname {
-                0% {
-                    transform: translateY(40px);
-                }
-
-                100% {
-                    transform: translateY(0px);
-                }
-            }
-        </style>
-        <h2 data-aos="heading-show" class=""><span class="heading_background" style="text-align: center;">About Us</span>
-        </h2> -->
-        <h3 class="#" style="color: #d3ad7f; font-size: 4rem; padding-bottom: 0%;">Previous Events</h3>
-    </div>
-
-</section>
-
-<!-- about section ends -->
-
-<section class="blogs" id="blogs">
-
-   <!-- set 1 -->
-    <div class="box-container">
-        <div class="box" onclick="location.href='event22list.html#solareclipse';">
-            <div class="image">
-                <img href="event22list.html#solareclipse" src="images/solareclipse.jpeg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Solar Eclipse</a>
-                <a href="#" class="btn1"><strong>14-15|08|2022</strong></a>
-                <p>Join us at the PG BLOCK terrace from 5PM-6PM today to witness this beautiful phenonmenon.</p>
-                <a href="event22list.html#solareclipse" class="btn">Know More</a>
-            </div>
-        </div>
-        <div class="box" onclick="location.href='event22list.html#anightofstargazing ';">
-            <div class="image">
-                <img src="images/anightofstargazing.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">A Night of Star Gazing</a>
-                <a href="#" class="btn1"><strong>14-15|08|2022</strong></a>
-                <p>Join Us for a night filled with astronomy at astro payyannur!</p>
-                <a href="event22list.html#anightofstargazing" class="btn">Know More</a>
-            </div>
-        </div>
-        <div class="box" onclick="location.href='event22list.html#callisto ';">
-            <div class="image">
-                <img src="images/callisto.jpg" alt="#airborne">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Callisto</a>
-                <a href="#" class="btn1"><strong>11|08|2022</strong></a>
-                <p>Join us for a Fun and Informative space quiz!</p>
-                <a href="event22list.html#callisto" class="btn">Know More</a>
-            </div>
-        </div>
-    
-        <div class="box" onclick="location.href='event22list.html#astrophotographycontest ';">
-            <div class="image">
-                <img src="images/astrophotography.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">astrophotography Contest</a>
-                <a href="#" class="btn1"><strong>10|08|2022 | 7PM</strong></a>
-                <p>Put your skills in Astrophotography and win exciting prizes!</p>
-                <a href="event22list.html#astrophotographycontest" class="btn">Know More</a>
-            </div>
-        </div>
-    
-        <div class="box" onclick="location.href=' event22list.html#galactic';">
-            <div class="image">
-                <img src="images/galactic.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Galactic</a><a href="#" class="btn1"><strong>21|07|2022 | 7PM</strong></a>
-                <p>Join us for a Fun and Informative space quiz!</p>
-                <a href="event22list.html#galactic" class="btn">Know More</a>
-            </div>
-        </div>
-
-   
-        <div class="box" onclick="location.href='event22list.html#airborne ';">
-            <div class="image">
-                <img src="images/Airborne2.png" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Airborne 2.0</a>
-                <a href="#" class="btn1"><strong>21|05|2021</strong></a>
-                <p>Join Us for an interesting session on Emerging Technologies in Aerospace And Aviation by sir Satheesh Palakkeel</p>
-                <a href="event22list.html#airborne" class="btn">Know More</a>
-            </div>
-        </div>
-
-        <div class="box" onclick="location.href='event22list.html#swearinginceremony ';">
-            <div class="image">
-                <img src="images/swearing in ceremony.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Swearing In Ceremony</a>
-                <a href="#" class="btn1"><strong>19|01|2021 | 4PM</strong></a>
-                <p>All club members are invited to join the swearing in ceremony as new crew members are invited to the board.</p>
-                <a href="event22list.html#swearinginceremony" class="btn">Know More</a>
-            </div>
-        </div>
-
-        <div class="box" onclick="location.href='event22list.html#artemis ';">
-            <div class="image">
-                <img src="images/Artemis.gif" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Artemis</a><a href="#" class="btn1"><strong>14,16|01|2022 | 7PM</strong></a>
-                <p>Join us for an exiciting 2 day virtual treasure hunt</p>
-                <a href="event22list.html#artemis" class="btn">Know More</a>
-            </div>
-        </div>
-
-    </div>
-
-
-</section>
-
-
-<!-- footer section starts  -->
-
-<section class="footer">
-
-    <div class="share">
-        <a href="https://instagram.com/calypsogcek?igshid=YmMyMTA2M2Y=" class="fab fa-instagram"></a>
-        <a href="https://www.linkedin.com/company/calypso-gcek/" class="fab fa-linkedin"></a>
-    </div>
-
-    <div class="credit">created by <span>CALYPSO GCEK</span> | all rights reserved</div>
-
-</section>
-
-<!-- footer section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>

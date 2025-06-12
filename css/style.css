@@ -987,3 +987,158 @@ section {
     /* Adjust title font size */
   }
 }
+
+.container-event {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 32px; /* Add back padding here for content */
+  flex-grow: 1; /* Allows the content area to take up available space, pushing footer down */
+}
+
+.main-heading-event {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #ffffff;
+}
+
+.card-grid-event {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Base Card Styling */
+.card-event {
+  background: radial-gradient(circle at center, #1f1f1f, #1a1a1a);
+  border: 1px solid #333;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.card-event:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+  border-color: #4299e1;
+}
+
+.card-content-event {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.header-info-event {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #a0aec0;
+  font-size: 0.875rem;
+  margin-bottom: 16px;
+}
+
+.header-info-event svg {
+  width: 20px;
+  height: 20px;
+  color: #a0aec0;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+/* Square Content Box for Picture */
+.square-content-box-event {
+  width: 100%;
+  padding-bottom: 100%;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b649, #f7dc6f);
+  background-size: 400% 400%;
+  animation: gradient-animation 10s ease infinite;
+  border: 1px solid #555;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-content-box-event img {
+  position: absolute; /* Position the image absolutely within the relative parent */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the image fill the width of the box */
+  height: 100%; /* Make the image fill the height of the box */
+  object-fit: cover; /* This is the magic: it covers the area while maintaining aspect ratio, cropping if necessary */
+  border-radius: 8px; /* Apply border-radius to the image as well */
+}
+
+/* Keyframe animation for the gradient */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Styling for content within the square box (for user's image) */
+.square-content-box-event img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.user-text-area-event {
+  font-size: 1.2rem; /* Corrected: No space */
+  color: #cbd5e0;
+  margin-bottom: 24px;
+  text-align: left;
+  min-height: 20px;
+  line-height: 1.5;
+  padding: 8px;
+  border: 1px dashed #444;
+  border-radius: 4px;
+  background-color: #111;
+}
+
+/* Know More Button Styling */
+.know-more-button-event {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: flex-start;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem; /* Added this line to increase text size */
+  background-color: #000;
+}
+
+.know-more-button-event:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: #000;
+  background-color: #e6e6fa;
+}
